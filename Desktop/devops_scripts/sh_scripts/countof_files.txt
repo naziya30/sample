@@ -1,0 +1,9 @@
+#!/bin/bash
+
+count=0
+for i in ./jsp/*
+do
+        echo $i
+        ((count++))
+done
+echo "Total num of Files: $count"

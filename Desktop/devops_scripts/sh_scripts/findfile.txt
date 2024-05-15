@@ -1,0 +1,15 @@
+#!/bin/bash
+
+read ext
+count=0
+for i in ./jsp/*.$ext
+do
+        echo $i
+
+        if [ -f $i ]
+        then
+                ((count++))
+        fi
+
+done
+echo $count
